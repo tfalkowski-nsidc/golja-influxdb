@@ -5,7 +5,7 @@ fixtures:
       ref:  '2.3.0'
     stdlib:
       repo: 'https://github.com/puppetlabs/puppetlabs-stdlib'
-      ref:  '4.12.0'
+      ref:  '4.16.0'
     wget:
       repo: 'https://github.com/maestrodev/puppet-wget.git'
       ref:  '1.7.3'
