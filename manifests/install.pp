@@ -11,7 +11,7 @@ class influxdb::install(
   }
 
   if $manage_install {
-    case $influxdb::server::install_method {
+    case $influxdb::params::install_method {
       'repo': {
         $_ensure = $ensure ? {
           'absent' => $ensure,
