@@ -8,6 +8,7 @@ class influxdb::service(
   if $manage_service {
     if ($::osfamily == 'RedHat' and $::operatingsystemmajrelease == '7') or ($::operatingsystem == 'Ubuntu' and $::operatingsystemmajrelease >= '15.10') {
       exec { 'refresh_systemd':
+        path        => ["/bin"],
         command     => 'systemctl daemon-reload',
         refreshonly => true,
       }
