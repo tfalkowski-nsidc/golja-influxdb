@@ -12,7 +12,7 @@ class influxdb::service(
         refreshonly => true,
       }
       service { 'influxdb':
-        provider   =>  systemd,
+        provider   => systemd,
         ensure     => $service_ensure,
         enable     => $service_enabled,
         hasrestart => true,
